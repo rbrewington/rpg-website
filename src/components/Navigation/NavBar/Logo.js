@@ -10,7 +10,7 @@ const LogoImg = glamorous.img({
 
 const Logo = () => {
   return (
-    <Link to="/">
+    <Link to={process.env.PUBLIC_URL + '/'}>
       <LogoImg src={logo} alt="logo" />
     </Link>
   );
