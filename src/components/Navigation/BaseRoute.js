@@ -5,7 +5,7 @@ import Home from '../Pages/Home';
 const BaseRoute = ({ menuConfig, pages }) => {
   return (
     <div>
-      <Route exact path="/" component={Home} />
+      <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
       {Object.keys(menuConfig).map(key => {
         const menuItem = menuConfig[key];
         const Component = pages[menuItem.component];
@@ -22,7 +22,11 @@ const BaseRoute = ({ menuConfig, pages }) => {
         }
 
         return (
-          <Route key={key} path={menuItem.location} component={Component} />
+          <Route
+            key={key}
+            path={process.env.PUBLIC_URL + menuItem.location}
+            component={Component}
+          />
         );
       })}
     </div>
