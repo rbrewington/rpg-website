@@ -1,0 +1,32 @@
+{
+  "games": {
+    "text": "Games",
+    "location": "/games",
+    "component": "Games"
+  },
+  "music": {
+    "text": "Music",
+    "location": "/music",
+    "component": "Music"
+  },
+  "podcasts": {
+    "text": "Podcasts",
+    "location": "/podcasts",
+    "component": "Podcasts"
+  },
+  "features": {
+    "text": "Features",
+    "location": "/features",
+    "component": "Features"
+  },
+  "forums": {
+    "text": "Forums",
+    "location": "/forums",
+    "component": "Forums"
+  },
+  "about": {
+    "text": "About",
+    "location": "/about",
+    "component": "About"
+  }
+}
