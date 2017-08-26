@@ -18,7 +18,7 @@ const carouselImages = importAll(
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ height: '100%' }}>
       <Carousel
         items={Object.values(carouselConfig)}
         images={carouselImages}

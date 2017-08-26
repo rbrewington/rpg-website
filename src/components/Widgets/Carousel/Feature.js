@@ -1,5 +1,6 @@
 import React from 'react';
 import glamorous from 'glamorous';
+import Tag from '../Tag';
 
 const FeatureContainer = glamorous.div(
   {
@@ -21,21 +22,34 @@ const FeatureText = glamorous.div({
   fontSize: '2rem',
   fontWeight: 'bold',
   color: '#ffffff',
-  textShadow: '1px 1px 2px #000',
+  textShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)',
   width: '50%',
   position: 'absolute',
-  bottom: '60px',
+  top: '160px',
   left: '100px',
 });
 
-const Feature = ({ filename, text, images }) => {
-  return (
-    <FeatureContainer url={images[filename]}>
-      <FeatureText>
-        {text}
-      </FeatureText>
-    </FeatureContainer>
-  );
-};
-
-export default Feature;
+export default class Feature extends React.Component {
+  componentDidMount() {
+    this.interval = setInterval(this.setNextSlide, 5000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+  setNextSlide = () => {
+    const { steps, activeIndex = 0, setActiveIndex } = this.props;
+    const nextIndex = activeIndex < steps.length - 1 ? activeIndex + 1 : 0;
+    return setActiveIndex(nextIndex);
+  };
+  render() {
+    const { filename, type, text, images } = this.props;
+    return (
+      <FeatureContainer url={images[filename]}>
+        <FeatureText>
+          <Tag type={type} style={{ marginBottom: '10px' }} />
+          {text}
+        </FeatureText>
+      </FeatureContainer>
+    );
+  }
+}

@@ -6,12 +6,8 @@ import Feature from './Feature';
 import Tiles from './Tiles';
 
 // TODO: cycle through carousel on timer
-// TODO: tiles are shitty looking
 
-const CarouselContainer = glamorous.div({
-  width: '1280px',
-  margin: '0 auto',
-});
+const CarouselContainer = glamorous.div({});
 
 const Carousel = ({ items, images }) => {
   const steps = items.map(item => ({ ...item, component: 'Feature' }));
@@ -22,7 +18,7 @@ const Carousel = ({ items, images }) => {
       Wrapper={CarouselContainer}
     >
       <RenderActive images={images} />
-      <Tiles />
+      <Tiles images={images} />
     </WizardLayout>
   );
 };

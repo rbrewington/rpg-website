@@ -1,0 +1,30 @@
+{
+  "feature": {
+    "backgroundColor": "#58b934",
+    "color": "#ffffff"
+  },
+  "news": {
+    "backgroundColor": "#36811e",
+    "color": "#ffffff"
+  },
+  "review": {
+    "backgroundColor": "#c60082",
+    "color": "#ffffff"
+  },
+  "preview": {
+    "backgroundColor": "#007ef0",
+    "color": "#ffffff"
+  },
+  "media": {
+    "backgroundColor": "#c91b1b",
+    "color": "#ffffff"
+  },
+  "music": {
+    "backgroundColor": "#6900f0",
+    "color": "#ffffff"
+  },
+  "podcast": {
+    "backgroundColor": "#ff8400",
+    "color": "#ffffff"
+  }
+}

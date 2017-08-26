@@ -1,22 +1,22 @@
 {
   "1": {
     "filename": "ACO.jpg",
-    "type": "News",
+    "type": "news",
     "text": "Assassin's Creed: Origins has gone gold. Releases tomorrow"
   },
   "2": {
     "filename": "art-027.jpg",
-    "type": "Review",
+    "type": "review",
     "text": "Mario Rabbids is game of the year!"
   },
   "3": {
     "filename": "image.jpg",
-    "type": "Feature",
+    "type": "feature",
     "text": "Why A Link Between Worlds is a terrible experience"
   },
   "4": {
     "filename": "ss-004.jpg",
-    "type": "News",
+    "type": "news",
     "text": "THQ Nordic Announces Biomutant"
   }
 }

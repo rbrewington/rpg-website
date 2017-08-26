@@ -1,11 +1,7 @@
 import React from 'react';
 
-const RenderActive = ({
-  activeIndex = 0,
-  steps,
-  stepComponents,
-  ...restProps
-}) => {
+const RenderActive = ({ stepComponents, ...restProps }) => {
+  const { activeIndex = 0, steps } = restProps;
   const currentStep = steps[activeIndex];
 
   if (!currentStep) {
