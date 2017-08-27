@@ -1,10 +1,19 @@
 import React from 'react';
+import glamorous from 'glamorous';
 import { Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 
+const BodyContainer = glamorous.div({
+  width: '1280px',
+  margin: '0 auto',
+  backgroundColor: '#ffffff',
+  boxShadow: '0px 2px 4px rgba(132, 132, 132, 0.5)',
+  height: 'calc(100% - 65px)',
+});
+
 const BaseRoute = ({ menuConfig, pages }) => {
   return (
-    <div>
+    <BodyContainer>
       <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
       {Object.keys(menuConfig).map(key => {
         const menuItem = menuConfig[key];
@@ -29,7 +38,7 @@ const BaseRoute = ({ menuConfig, pages }) => {
           />
         );
       })}
-    </div>
+    </BodyContainer>
   );
 };
 
