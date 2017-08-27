@@ -16,10 +16,10 @@ const Tile = glamorous.div(
     flexWrap: 'nowrap',
     justifyContent: 'space-between',
     color: '#ffffff',
-    fontSize: '1.1rem',
+    fontSize: '1rem',
     textAlign: 'center',
     padding: '19px 11px 11px',
-    textShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)',
+    textShadow: '0px 2px 4px rgba(0, 0, 0, 0.7)',
     ':hover': { cursor: 'pointer' },
   },
   ({ imageUrl, active }) => {

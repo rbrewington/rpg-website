@@ -42,7 +42,7 @@ const MainMenu = ({ menuConfig }) => {
         return (
           <MenuItem
             key={key}
-            to={menuItem.location}
+            to={process.env.PUBLIC_URL + menuItem.location}
             activeStyle={{
               color: '#4b9e2a',
               borderBottom: '5px solid #4b9e2a',

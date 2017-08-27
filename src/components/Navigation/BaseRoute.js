@@ -4,11 +4,10 @@ import { Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 
 const BodyContainer = glamorous.div({
-  width: '1280px',
+  width: '1040px',
   margin: '0 auto',
   backgroundColor: '#ffffff',
   boxShadow: '0px 2px 4px rgba(132, 132, 132, 0.5)',
-  height: 'calc(100% - 65px)',
 });
 
 const BaseRoute = ({ menuConfig, pages }) => {

@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div style={{ height: '100%' }}>
+        <div>
           <NavBar menuConfig={menuConfig} />
           <BaseRoute menuConfig={menuConfig} pages={Pages} />
         </div>

@@ -8,7 +8,7 @@ const Tag = glamorous.div(
     width: '100px',
     height: '34px',
     textTransform: 'uppercase',
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: 'normal',
     textShadow: 'none',
     display: 'flex',

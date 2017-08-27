@@ -19,19 +19,19 @@ const FeatureContainer = glamorous.div(
 );
 
 const FeatureText = glamorous.div({
-  fontSize: '2rem',
+  fontSize: '1.8rem',
   fontWeight: 'bold',
   color: '#ffffff',
-  textShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)',
+  textShadow: '0px 2px 4px rgba(0, 0, 0, 0.7)',
   width: '50%',
   position: 'absolute',
-  top: '160px',
-  left: '100px',
+  top: '180px',
+  left: '60px',
 });
 
 export default class Feature extends React.Component {
   componentDidMount() {
-    this.interval = setInterval(this.setNextSlide, 5000);
+    this.interval = setInterval(this.setNextSlide, 8000);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
